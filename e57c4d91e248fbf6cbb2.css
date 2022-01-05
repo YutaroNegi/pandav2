@@ -111,3 +111,7 @@ b {
 .modal-header {
     padding: 0.5rem;
 }
+
+.hover-pointer:hover{
+    cursor: pointer;
+}
