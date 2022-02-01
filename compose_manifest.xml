@@ -79,7 +79,22 @@
         <Action xsi:type="ShowTaskpane">
           <SourceLocation resid="newAndConfig.Url"/>
         </Action>
-      </Control>      
+      </Control>    
+      <Control xsi:type="Button" id="config_btn">
+        <Label resid="config_btn.Label"/>
+        <Supertip>
+          <Title resid="config_btn.Label"/>
+          <Description resid="config_btn.Tooltip"/>
+        </Supertip>
+        <Icon>
+          <bt:Image size="16" resid="Icon.16x16"/>
+          <bt:Image size="32" resid="Icon.32x32"/>
+          <bt:Image size="80" resid="Icon.80x80"/>
+        </Icon>
+        <Action xsi:type="ShowTaskpane">
+          <SourceLocation resid="config_btn.Url"/>
+        </Action>
+      </Control>  
     </Group>
   </OfficeTab>
 </ExtensionPoint>
@@ -96,16 +111,19 @@
         <bt:Url id="Commands.Url" DefaultValue="https://yutaronegi.github.io/pandav2/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://yutaronegi.github.io/pandav2/taskpane.html"/>
         <bt:Url id="newAndConfig.Url" DefaultValue="https://yutaronegi.github.io/pandav2/newAndConfig.html"/>
+        <bt:Url id="config_btn.Url" DefaultValue="https://yutaronegi.github.io/pandav2/config_btn.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Git the gist"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="TaskPane"/>
         <bt:String id="TaskpaneButton.Title" DefaultValue="TaskPane"/>
         <bt:String id="newAndConfig.Label" DefaultValue="New"/>
+        <bt:String id="config_btn.Label" DefaultValue="Configure"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Displays a list of your gists and allows you to insert their contents into the current message."/>
         <bt:String id="newAndConfig.Tooltip" DefaultValue="newAndConfig"/>
+        <bt:String id="config_btn.Tooltip" DefaultValue="Configure"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- https://yutaronegi.github.io/pandav2/ -->
-<!-- https://yutaronegi.github.io/pandav2/ -->
+<!-- localhost:3000 -->
+<!-- localhost:3000 -->
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>f6f440f7-e88f-4621-9ba1-d9dd77a196a1</Id>
   <Version>1.0.0.0</Version>
@@ -95,6 +95,21 @@
                     <SourceLocation resid="newAndConfig.Url"/>
                   </Action>
                 </Control>
+                <Control xsi:type="Button" id="config_btn">
+                  <Label resid="config_btn.Label"/>
+                  <Supertip>
+                    <Title resid="config_btn.Label"/>
+                    <Description resid="config_btn.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="config_btn.Url"/>
+                  </Action>
+                </Control>                
               </Group>
             </OfficeTab>
           </ExtensionPoint>
@@ -111,17 +126,20 @@
         <!-- <bt:Url id="Commands.Url" DefaultValue="https://yutaronegi.github.io/pandav2/commands.html"/> -->
         <bt:Url id="Taskpane.Url" DefaultValue="https://yutaronegi.github.io/pandav2/taskpane.html"/>
         <bt:Url id="newAndConfig.Url" DefaultValue="https://yutaronegi.github.io/pandav2/newAndConfig.html"/>
+        <bt:Url id="config_btn.Url" DefaultValue="https://yutaronegi.github.io/pandav2/config_btn.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
         <!-- <bt:String id="ActionButton.Label" DefaultValue="Perform an action"/> -->
         <bt:String id="newAndConfig.Label" DefaultValue="New"/>
+        <bt:String id="config_btn.Label" DefaultValue="Configure"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
         <!-- <bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/> -->
         <bt:String id="newAndConfig.Tooltip" DefaultValue="newAndConfig"/>
+        <bt:String id="config_btn.Tooltip" DefaultValue="Configure"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
