@@ -65,7 +65,7 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <!-- <Control xsi:type="Button" id="ActionButton">
+                <Control xsi:type="Button" id="ActionButton">
                   <Label resid="ActionButton.Label"/>
                   <Supertip>
                     <Title resid="ActionButton.Label"/>
@@ -79,7 +79,7 @@
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>action</FunctionName>
                   </Action>
-                </Control> -->
+                </Control>
                 <Control xsi:type="Button" id="newAndConfigBtn">
                   <Label resid="newAndConfig.Label"/>
                   <Supertip>
@@ -123,7 +123,7 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://yutaronegi.github.io/pandav2/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <!-- <bt:Url id="Commands.Url" DefaultValue="https://yutaronegi.github.io/pandav2/commands.html"/> -->
+        <bt:Url id="Commands.Url" DefaultValue="https://yutaronegi.github.io/pandav2/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://yutaronegi.github.io/pandav2/taskpane.html"/>
         <bt:Url id="newAndConfig.Url" DefaultValue="https://yutaronegi.github.io/pandav2/newAndConfig.html"/>
         <bt:Url id="config_btn.Url" DefaultValue="https://yutaronegi.github.io/pandav2/config_btn.html"/>
@@ -131,15 +131,15 @@
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
-        <!-- <bt:String id="ActionButton.Label" DefaultValue="Perform an action"/> -->
         <bt:String id="newAndConfig.Label" DefaultValue="New"/>
         <bt:String id="config_btn.Label" DefaultValue="Configure"/>
+                <bt:String id="ActionButton.Label" DefaultValue="Receptive Intercation"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
-        <!-- <bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/> -->
         <bt:String id="newAndConfig.Tooltip" DefaultValue="newAndConfig"/>
         <bt:String id="config_btn.Tooltip" DefaultValue="Configure"/>
+        <bt:String id="ActionButton.Tooltip" DefaultValue="Receptive Intercation"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
