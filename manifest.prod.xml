@@ -133,13 +133,13 @@
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Taskpane"/>
         <bt:String id="newAndConfig.Label" DefaultValue="New"/>
         <bt:String id="config_btn.Label" DefaultValue="Configure"/>
-                <bt:String id="ActionButton.Label" DefaultValue="Receptive Intercation"/>
+                <bt:String id="ActionButton.Label" DefaultValue="Receptive Interaction"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
         <bt:String id="newAndConfig.Tooltip" DefaultValue="newAndConfig"/>
         <bt:String id="config_btn.Tooltip" DefaultValue="Configure"/>
-        <bt:String id="ActionButton.Tooltip" DefaultValue="Receptive Intercation"/>
+        <bt:String id="ActionButton.Tooltip" DefaultValue="Receptive Interaction"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
