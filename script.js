@@ -75,7 +75,7 @@ function criar_contato_paths(){
 
 function busca_interacao(email) {
     $.ajax({
-      url: 'http://localhost:80/busca_interacao_email',
+      url: 'https://dev.liveuniversity.com:2742/busca_interacao_email',
       method: 'post',
       data: {
         email: email
@@ -223,7 +223,7 @@ function create_contato_pf(){
   modal_reset()
 
   $.ajax({
-      url: 'http://localhost:80/criar_contato',
+      url: 'https://dev.liveuniversity.com:2742/criar_contato',
       method: 'post',
       data: data
   }).then((res) => {
@@ -280,7 +280,7 @@ function create_contato_empresa(){
   console.log(data);
   // return
   $.ajax({
-      url: 'http://localhost:80/criar_contato_empresa',
+      url: 'https://dev.liveuniversity.com:2742/criar_contato_empresa',
       method: 'post',
       data: data
   }).then((res) => {
@@ -332,7 +332,7 @@ function create_contato_create_empresa(){
   modal_reset()
 
   $.ajax({
-      url: 'http://localhost:80/create_contato_create_empresa_panda',
+      url: 'https://dev.liveuniversity.com:2742/create_contato_create_empresa_panda',
       method: 'post',
       data: data
   }).then((res) => {
@@ -376,7 +376,7 @@ function add_email_search(){
     }
 
     $.ajax({
-        url: 'http://localhost:80/add_email_search',
+        url: 'https://dev.liveuniversity.com:2742/add_email_search',
         method: 'post',
         data: data
     }).then((res) => {
@@ -398,7 +398,7 @@ function show_visbility(item, id_visibility) {
   console.log(data);
 
   $.ajax({
-    url: 'http://localhost:80/alterar_visibilidade_panda',
+    url: 'https://dev.liveuniversity.com:2742/alterar_visibilidade_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -421,7 +421,7 @@ function open_pedidos(){
   }
 
   $.ajax({
-    url: 'http://localhost:80/get_historico_pedidos_panda',
+    url: 'https://dev.liveuniversity.com:2742/get_historico_pedidos_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -469,7 +469,7 @@ function show_bounce(item, bounce_status) {
   if(data.id_contato == null || data.bounce_status == null) return
 
   $.ajax({
-    url: 'http://localhost:80/alterar_bounce_email',
+    url: 'https://dev.liveuniversity.com:2742/alterar_bounce_email',
     method: 'post',
     data: data
   }).then((res) => {
@@ -552,7 +552,7 @@ function search_nome_empresa(val){
   }
 
   $.ajax({
-    url: 'http://localhost:80/procura_nome_empresa_panda',
+    url: 'https://dev.liveuniversity.com:2742/procura_nome_empresa_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -599,7 +599,7 @@ function search_cnpj_empresa(val){
   }
 
   $.ajax({
-    url: 'http://localhost:80/procura_cnpj_empresa_panda',
+    url: 'https://dev.liveuniversity.com:2742/procura_cnpj_empresa_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -688,7 +688,7 @@ function update_contato_info(tipo, id_val){
     console.log(data);
     // return
     $.ajax({
-      url: 'http://localhost:80/update_info_contato_panda',
+      url: 'https://dev.liveuniversity.com:2742/update_info_contato_panda',
       method: 'post',
       data: data
     }).then((res) => {
@@ -720,7 +720,7 @@ function delete_parent(element, tipo, value){
   console.log(data);
   // return
   $.ajax({
-    url: 'http://localhost:80/delete_info_contato_panda',
+    url: 'https://dev.liveuniversity.com:2742/delete_info_contato_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -813,7 +813,7 @@ function insert_new_email(e){
     console.log(data);
     // return
     $.ajax({
-      url: 'http://localhost:80/insert_new_email_panda',
+      url: 'https://dev.liveuniversity.com:2742/insert_new_email_panda',
       method: 'post',
       data: data
     }).then((res) => {
@@ -843,7 +843,7 @@ function insert_new_phone(e){
   console.log(data);
 
   $.ajax({
-    url: 'http://localhost:80/insert_new_phone_panda',
+    url: 'https://dev.liveuniversity.com:2742/insert_new_phone_panda',
     method: 'post',
     data: data
   }).then((res) => {
@@ -865,7 +865,7 @@ function insert_new_area(elm){
   let data = {id_contato, value}
 
   $.ajax({
-    url: 'http://localhost:80/insert_new_area_panda',
+    url: 'https://dev.liveuniversity.com:2742/insert_new_area_panda',
     method: 'post',
     data: data
   }).then((res) => {
