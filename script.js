@@ -1,4 +1,4 @@
-let yutaro = 'script.js'
+// let yutaro = 'script.js'
 let id_contato = ''
 let cliente_email
 let operador_email
