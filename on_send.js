@@ -65,8 +65,9 @@ function gerar_interacao_reply(asyncResult) {
         //     asyncResult.asyncContext.completed({ allowEvent: true });
         // }
     }).fail((err)=>{
+        asyncResult.asyncContext.completed({ allowEvent: true });
         console.log(err);
-        mailboxItem.notificationMessages.addAsync('NoSend', { type: 'errorMessage', message: `Error, Problem with sql, contact the IT team` });
-        asyncResult.asyncContext.completed({ allowEvent: false });
+        // mailboxItem.notificationMessages.addAsync('NoSend', { type: 'errorMessage', message: `Error, Problem with sql, contact the IT team` });
+        // asyncResult.asyncContext.completed({ allowEvent: false });
     })
 }
