@@ -768,9 +768,7 @@ function add_new_area(){
         </div>
 
         <div id="area_dropdown_div_" class="dropdown mb-4 area_drop_class">
-            <button  class="btn btn-secondary dropdown-toggle bg-live" type="button" id="area_" data-toggle="dropdown" aria-expanded="false" style="width: 69vw;">
-                Administrativo
-            </button>
+            <button value="1" class="btn btn-secondary dropdown-toggle bg-live" type="button" id="area_" data-toggle="dropdown" aria-expanded="false" style="width: 69vw;">Administrativo</button>
             <img onclick="change_btn_area_user(), insert_new_area(this)" class="hover-pointer" src="222a1c7ef846e3979556.svg" alt="">
             <img onclick="delete_parent(this, 'area', )" class="hover-pointer trash" src="1129c53a10f3c7163570.svg" alt="">
             <div class="dropdown-menu" aria-labelledby="area">
