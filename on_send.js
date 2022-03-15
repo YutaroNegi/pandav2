@@ -1,4 +1,4 @@
-let yutaro = 'on_send.js'
+// let yutaro = 'on_send.js'
 var mailboxItem;
 var to_andress
 var from_adress

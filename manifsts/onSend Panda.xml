@@ -22,7 +22,7 @@
   <FormSettings>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://https://yutaronegi.github.io/pandav2//taskpane.html" />
+        <SourceLocation DefaultValue="https://yutaronegi.github.io/pandav2/taskpane.html" />
       </DesktopSettings>
     </Form>
   </FormSettings>
@@ -58,7 +58,7 @@
       <Resources>
         <bt:Urls>
            <!-- The JavaScript code is hosted on a secure and trusted web server. -->
-          <bt:Url id="residUILessFunctionFileUrl" DefaultValue="https://https://yutaronegi.github.io/pandav2//taskpane.html" ></bt:Url>
+          <bt:Url id="residUILessFunctionFileUrl" DefaultValue="https://yutaronegi.github.io/pandav2/taskpane.html" ></bt:Url>
         </bt:Urls>
       </Resources>
     </VersionOverrides>
